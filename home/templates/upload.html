@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>File Upload</title>
+</head>
+<body>
+    <h1>File Upload Form</h1>
+    <div class="card">
+    <form  method="POST" >
+        {% csrf_token %}
+        
+        <label >movie name</label>
+        <input type="text" name="name" >
+        <br>
+        <label >genre:</label>
+        <input type="text" name="genre" >
+        <br>
+        <label>Rating: </label>
+        <input type="number" step="0.01" name="rating" >
+        <br>
+
+        <label>image:</label>
+        <input type="text" name="file" >
+        <br>
+        <label>about:</label>
+        <input type="text" name="about" >
+        <br>
+
+        <label>director:</label>
+        <input type="text" name="director" >
+        <br>
+
+        <button type="submit">Submit</button>
+         
+    </form>
+    </div>
+</body>
+</html>
